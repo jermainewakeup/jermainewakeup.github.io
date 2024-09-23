@@ -20,10 +20,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05); /* Slight transparency for an ethereal effect */
-    border: 1px solid #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 /* Header styling */
@@ -33,8 +29,8 @@ header {
 }
 
 header h1 {
-    font-family: 'UnifrakturMaguntia', cursive; /* Fraktur-style font for a medieval feel */
-    color: #D4AF37; /* Gold color for an elegant, gothic touch */
+    font-family: 'UnifrakturMaguntia', cursive;
+    color: #D4AF37; /* Gold color for an elegant touch */
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -70,29 +66,15 @@ nav ul li a:hover {
     color: #FFF;
 }
 
-/* Section titles */
-section h2 {
-    font-family: 'Cinzel', serif;
-    color: #FFF;
-    font-size: 2.5rem;
-    border-bottom: 2px solid #444;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
 /* Portfolio grid */
 .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    justify-content: space-around;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
-    background-color: #222;
-    border: 1px solid #333;
-    padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -100,7 +82,6 @@ section h2 {
 .portfolio-item img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #444;
 }
 
 .portfolio-item h3 {
@@ -118,36 +99,26 @@ footer {
     margin-top: 40px;
     text-align: center;
     padding: 20px;
-    background-color: #111;
-    border-top: 1px solid #444;
-}
-
-footer p {
     color: #B0B0B0;
 }
 
-footer a {
-    color: #D4AF37;
-    text-decoration: none;
+footer p, footer a {
+    color: #B0B0B0;
 }
 
 footer a:hover {
     color: #FFF;
 }
 
-/* Button styles */
-button {
-    background-color: #D4AF37;
-    color: #1A1A1A;
+/* Remove outlines and borders */
+.portfolio-item img,
+audio {
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-family: 'Cinzel', serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    outline: none;
 }
 
-button:hover {
-    background-color: #B68D32;
-    color: #FFF;
+button, a {
+    outline: none;
+    border: none;
 }
+
