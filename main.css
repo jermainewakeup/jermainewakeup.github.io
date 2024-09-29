@@ -1,117 +1,75 @@
 body {
-    background-image: ('Images/fog_bac.gif');
-    background-repeat: repeat;
-    background-size: auto;
-    background-attachment: fixed;
-    color: #333333;
-    font-family: Arial, sans-serif;
-    font-size: 18em;
-    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: left;
-    padding: 20px;
-    position: relative;
+    background-color: #4B0082;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #333;
 }
 
-.large-s {
-    font-size: 6em; 
-    font-weight: bold; 
-    color: #333;
-}
-
-.header h1 {
-    display: inline; /* Makes "Sfumato" appear inline */
-    font-size: 3em; /* Adjust this to change the size of "fumato" */
+h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
 .nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    background-color: #3c3c3c;
+    padding: 10px;
+    text-align: center;
 }
 
 .nav a {
-    color: #333333;
+    color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em; /* Increase font size for visibility */
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin: 0 5px;
 }
 
 .nav a:hover {
-    color: #b985df;
+    background-color: #b985df;
 }
 
 .main-content {
+    background-color: white;
     padding: 20px;
+    margin: 20px;
+    border: 2px solid #4B0082;
+    border-radius: 5px;
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: #4B0082;
+    color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-    color: #333333;
-}
-
-.btn {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-.gallery-img {
-    width: 100%;
-    max-width: 200px;
-    margin: 10px;
-    transition: transform 0.2s;
-}
-
-.gallery-img:hover {
-    transform: scale(1.05);
-}
-
-.form {
-    padding: 15px;
-    border: 1px solid #ddd;
-    margin: 10px 0;
-}
-
-.form input,
-.form textarea {
-    width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-}
-
-.form input[type="submit"] {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.form input[type="submit"]:hover {
-    background-color: #0056b3;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .track-title {
-    font-size: 2em; 
-    font-weight: bold; 
-    font-style: italic; 
-    color: #333333; 
-    margin-bottom: 10px; 
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+audio {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.large-s {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
 }
