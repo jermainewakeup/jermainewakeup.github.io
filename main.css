@@ -1,75 +1,183 @@
+
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    font-family: 'Verdana', sans-serif;
+    background-color: #1E1E3F; 
+    color: #E0E0E0;
+    font-family: 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
+    cursor: url('Images/custom_cursor.cur'), auto; 
 }
+
 
 .header {
-    background-color: #4B0082;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #333;
-}
-
-h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.nav {
-    background-color: #3c3c3c;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 15px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    margin: 0 5px;
-}
-
-.nav a:hover {
-    background-color: #b985df;
-}
-
-.main-content {
-    background-color: white;
+    background: linear-gradient(to bottom, #3A3A78, #1E1E3F); 
+    color: #FFF;
     padding: 20px;
-    margin: 20px;
-    border: 2px solid #4B0082;
-    border-radius: 5px;
-}
-
-.footer {
-    background-color: #4B0082;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.track-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-style: italic;
-    margin: 10px 0;
-}
-
-audio {
-    margin-top: 5px;
-    width: 100%;
+    text-align: left;
+    border-bottom: 3px solid #282850;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .large-s {
-    font-size: 4em;
+    font-size: 6em;
     font-weight: bold;
-    color: white;
+    color: #4B0082; 
+    text-shadow: 2px 2px 4px #282850; 
+}
+
+
+.nav {
+    background-color: #2C2C6B;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #3D3D8A; 
+    border-bottom: 1px solid #3D3D8A;
+}
+
+.nav a {
+    color: #B0C4DE; 
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #3A3A78; 
+    border: 1px solid #5A5AFF;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background-color: #4B0082; 
+    border-color: #B0C4DE; 
+    color: #FFF;
+}
+
+
+.main-content {
+    background-color: #2E2E50; 
+    padding: 30px;
+    margin: 20px auto;
+    border: 1px solid #3A3A78;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.footer {
+    background-color: #2C2C6B;
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 1px solid #3D3D8A;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.track-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-style: italic;
+    color: #5A5AFF; 
+    margin: 15px 0;
+    text-shadow: 1px 1px 2px #282850;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+h2, h3 {
+    color: #B0C4DE; 
+    text-shadow: 1px 1px 2px #3A3A78; 
+}
+
+
+.glossy-btn {
+    background: linear-gradient(to bottom, #5A5AFF 0%, #2C2C6B 100%);
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #B0C4DE;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.glossy-btn:hover {
+    background: linear-gradient(to bottom, #7A7AFF 0%, #4B0082 100%);
+    border-color: #FFF;
+}
+
+
+.metallic {
+    background: linear-gradient(135deg, #4A4A4A, #D0D0D0, #4A4A4A);
+    border: 2px solid #3A3A3A;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.table-style {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #3A3A78;
+    color: #FFF;
+    border: 2px solid #5A5AFF;
+}
+
+.table-style th, .table-style td {
+    border: 1px solid #5A5AFF;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-style th {
+    background-color: #282850;
+}
+
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    background-color: #2C2C6B;
+    color: #FFF;
+    padding: 10px;
+    font-weight: bold;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2C2C6B;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5A5AFF;
+    border-radius: 6px;
+}
+
+
+.glow-text {
+    color: #FFF;
+    text-shadow: 0 0 5px #5A5AFF, 0 0 10px #5A5AFF;
 }
