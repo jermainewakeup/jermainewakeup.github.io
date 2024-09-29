@@ -189,3 +189,50 @@ body, html {
     color: #FFF;
     text-shadow: 0 0 5px #5A5AFF, 0 0 10px #5A5AFF;
 }
+
+.song-details {
+    background-color: #2E2E50;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+.song-details h2 {
+    color: #5A5AFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.song-details p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.credits {
+    font-size: 1em;
+    color: #E0E0E0;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #5A5AFF;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #4B0082;
+}
