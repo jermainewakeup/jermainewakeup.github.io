@@ -14,9 +14,18 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
     padding: 20px;
-    font-size: 6em;
-    color: black;
     position: relative;
+}
+
+.large-s {
+    font-size: 6em; 
+    font-weight: bold; 
+    color: #333;
+}
+
+.header h1 {
+    display: inline; /* Makes "Sfumato" appear inline */
+    font-size: 3em; /* Adjust this to change the size of "fumato" */
 }
 
 .nav {
@@ -29,10 +38,11 @@ body {
     color: #333333;
     text-decoration: none;
     margin: 0 15px;
+    font-size: 1.2em; /* Increase font size for visibility */
 }
 
 .nav a:hover {
-    color: #b985df
+    color: #b985df;
 }
 
 .main-content {
@@ -78,7 +88,8 @@ body {
     margin: 10px 0;
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -96,9 +107,10 @@ body {
     background-color: #0056b3;
 }
 
-.large-s {
-    font-size: 16em; 
+.track-title {
+    font-size: 2em; 
     font-weight: bold; 
-    color: #333;
+    font-style: italic; 
+    color: #333333; 
+    margin-bottom: 10px; 
 }
-
