@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    background-image: url('Images/fog_bac.gif');
+    background-repeat: repeat;
     color: #333333;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,17 +9,18 @@ body {
 }
 
 .header {
-    background-color: white;
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
     padding: 20px;
     font-size: 2em;
     color: black;
+    position: relative;
 }
 
 .nav {
-    background-color: white;
-    text-align: center;
-    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .nav a {
@@ -28,7 +30,7 @@ body {
 }
 
 .nav a:hover {
-    color: #007BFF;
+    color: #b985df
 }
 
 .main-content {
@@ -91,3 +93,10 @@ body {
 .form input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+.large-s {
+    font-size: 4em; 
+    font-weight: bold; 
+    color: #333;
+}
+
