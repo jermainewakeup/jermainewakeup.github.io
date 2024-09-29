@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | sfumato labs</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100% - 80px); 
+            background-color: #1E1E3F;
+            color: #E0E0E0;
+            font-family: 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .contact-text {
+            font-size: 10em;
+            font-weight: bold;
+            color: #5A5AFF;
+            text-shadow: 2px 2px 4px #4B0082;
+            line-height: 1;
+            margin: 0;
+        }
+
+        .email-form {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .email-form input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1em;
+            border: 2px solid #5A5AFF; 
+            border-radius: 8px;
+            background-color: #2E2E50; 
+            color: #E0E0E0;
+            margin-bottom: 20px;
+        }
+
+        .email-form input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: #5A5AFF; 
+            color: #FFF;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .email-form input[type="submit"]:hover {
+            background-color: #4B0082; 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>
+            <span class="large-s">S</span>fumato
+        </h1>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="music.html">Music</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-text">EMAIL</div>
+        <form class="email-form" action="#" method="post">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
