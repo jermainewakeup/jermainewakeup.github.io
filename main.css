@@ -21,6 +21,12 @@ body, html {
     border-radius: 6px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
 /*-----Header and Nav------*/
 .header {
     background: linear-gradient(to bottom, #3A3A78, #1E1E3F);
