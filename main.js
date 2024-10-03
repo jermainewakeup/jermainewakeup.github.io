@@ -6,10 +6,9 @@ function showEasterEgg() {
         "Remember MySpace? 🤯",
         "You just got Rickrolled! 🎵",
         "Click here to win a free iPod! 📱",
-        "LOL! So random! 😜",
-        "OMG, it's like 2003 all over again! 💿",
+        "What's 9+10?",
+        "OMG, it's like 2002 all over again! 💿",
         "Welcome to the Internet! 🚀",
-        "Are you still using dial-up? 🖥️"
     ];
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     alert(randomMessage);
